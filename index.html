@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Cheat Codes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #ff007f, #00b7eb);
+            font-family: 'Courier New', monospace;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            cursor: none; /* Hide default cursor */
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .nav-title {
+            margin: 0;
+            font-size: clamp(1.5em, 4vw, 2em);
+            text-shadow: 0 0 10px #ff007f;
+            text-align: center;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+            text-align: center;
+            margin: 20px auto;
+            flex: 1;
+        }
+
+        h1 {
+            font-size: clamp(2em, 6vw, 3em);
+            text-shadow: 0 0 15px #ff007f;
+            margin-bottom: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ff007f;
+            border-radius: 10px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff007f;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            text-shadow: 0 0 10px #00b7eb;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card:nth-child(1) .card-image {
+            background-image: url(./img/img-vice-city.jpg);
+        }
+
+        .card:nth-child(2) .card-image {
+            background-image: url(./img/img-san-andreas.jpg);
+        }
+
+        .card:nth-child(3) .card-image {
+            background-image: url(./img/img-gta-v.jpg);
+        }
+
+        .card-title {
+            padding: 15px;
+            font-size: clamp(1.2em, 4vw, 1.5em);
+            text-align: center;
+            margin: 0;
+            text-shadow: 0 0 5px #ff007f;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: clamp(0.8em, 2.5vw, 1em);
+            text-shadow: 0 0 5px #00b7eb;
+        }
+
+        .footer a {
+            color: #ff007f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #00b7eb;
+        }
+
+        /* Custom Cursor (Gun Image) Styles */
+        .custom-cursor {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            background: url(./img/img-boss.png) no-repeat center/contain;
+            pointer-events: none;
+            z-index: 1000;
+            transform: translate(-50%, -50%);
+            border-radius: 50px;
+            /* box-shadow: 0 0 10px #ff007f, 0 0 20px #00b7eb; */
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .card {
+                width: 45%;
+                min-width: 250px;
+            }
+
+            .card-image {
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+                margin: 10px auto;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .card-image {
+                height: 150px;
+            }
+
+            .footer {
+                padding: 15px;
+            }
+
+            .custom-cursor {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .navbar {
+                padding: 20px 30px;
+            }
+
+            .container {
+                padding: 40px;
+            }
+
+            .card {
+                width: 350px;
+            }
+
+            .card-image {
+                height: 220px;
+            }
+
+            .footer {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="nav-title">Codewati Projects</h2>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>GTA Cheat Codes</h1>
+        <div class="card-container">
+            <a href="./files/vice_city.html" class="card">
+                <div class="card-image">GTA Vice City</div>
+                <h2 class="card-title">Vice City Cheats</h2>
+            </a>
+            <a href="./files/san_andreas.html" class="card">
+                <div class="card-image">GTA San Andreas</div>
+                <h2 class="card-title">San Andreas Cheats</h2>
+            </a>
+            <a href="./files/gta_v.html" class="card">
+                <div class="card-image">GTA V</div>
+                <h2 class="card-title">GTA V Cheats</h2>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Codewati Tech Pvt. Ltd. | All rights reserved.</p>
+        <p>Developed by <a href="mailto:abhiv4586@gmail.com">Codewati Team</a></p>
+        <p>Follow us: <a href="https://twitter.com/codewati" target="_blank">Twitter</a> | 
+        <a href="https://github.com/codewati" target="_blank">GitHub</a> | 
+        <a href="https://abhivishrut.github.io/codewati/" target="_blank">Website</a></p>
+        <p>For support, email: <a href="mailto:codewatipvtltd@gmail.com">Support</a></p>
+    </footer>
+
+    <!-- Custom Cursor (Gun Image) -->
+    <div class="custom-cursor"></div>
+
+    <script>
+        // Cursor Movement Monitoring
+        const cursor = document.querySelector('.custom-cursor');
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+        const speed = 0.2; // Smoothness of cursor movement
+        let lastMouseX = 0, lastMouseY = 0;
+
+        // Update cursor position and rotation on mouse move
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            // Calculate angle for rotation based on mouse movement
+            const deltaX = mouseX - lastMouseX;
+            const deltaY = mouseY - lastMouseY;
+            const angle = Math.atan2(deltaY, deltaX) * 180 / Math.PI;
+            cursor.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+
+            lastMouseX = mouseX;
+            lastMouseY = mouseY;
+        });
+
+        // Animation loop for smooth trailing effect
+        function animateCursor() {
+            cursorX += (mouseX - cursorX) * speed;
+            cursorY += (mouseY - cursorY) * speed;
+            cursor.style.left = `${cursorX}px`;
+            cursor.style.top = `${cursorY}px`;
+            requestAnimationFrame(animateCursor);
+        }
+
+        // Start animation
+        animateCursor();
+
+        // Hide cursor when leaving the window
+        document.addEventListener('mouseleave', () => {
+            cursor.style.opacity = '0';
+        });
+
+        document.addEventListener('mouseenter', () => {
+            cursor.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>

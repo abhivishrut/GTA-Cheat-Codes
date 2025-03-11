@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Vice City Complete Cheat Codes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #ff007f, #00b7eb);
+            font-family: 'Courier New', monospace;
+            color: #fff;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: clamp(1.8em, 5vw, 2.5em); /* Scales between 1.8em and 2.5em */
+            text-shadow: 0 0 15px #ff007f;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #search {
+            padding: 12px;
+            width: 100%;
+            max-width: 500px;
+            border: none;
+            border-radius: 8px;
+            font-size: clamp(0.9em, 3vw, 1.1em); /* Scales font size */
+            background: #fff;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ff007f;
+        }
+
+        th {
+            background: #ff007f;
+            text-transform: uppercase;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        tr:hover {
+            background: rgba(0, 183, 235, 0.3);
+        }
+
+        .warning {
+            text-align: center;
+            font-size: clamp(0.8em, 2.5vw, 0.95em);
+            color: #ffcc00;
+            margin-top: 20px;
+            padding: 0 10px;
+        }
+
+        /* Responsive Table */
+        @media (max-width: 768px) {
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            thead {
+                display: none; /* Hide header on small screens */
+            }
+
+            tbody, tr, td {
+                display: block;
+                width: 100%;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #ff007f;
+                border-radius: 5px;
+                background: rgba(255, 255, 255, 0.05);
+            }
+
+            td {
+                padding: 10px;
+                border-bottom: none;
+                position: relative;
+            }
+
+            td:first-child {
+                background: #ff007f;
+                font-weight: bold;
+                border-radius: 5px 5px 0 0;
+            }
+
+            td:last-child {
+                border-bottom: 1px solid #ff007f;
+                border-radius: 0 0 5px 5px;
+            }
+
+            td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                color: #ffcc00;
+                margin-bottom: 5px;
+            }
+        }
+
+        /* Additional Breakpoints */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                margin-bottom: 15px;
+            }
+
+            .search-box {
+                margin-bottom: 15px;
+            }
+
+            td {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GTA Vice City Complete Cheat Codes</h1>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search cheats..." onkeyup="searchCheats()">
+        </div>
+        <table id="cheatTable">
+            <thead>
+                <tr>
+                    <th>Cheat Code</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Weapon Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">THUGSTOOLS</td>
+                    <td data-label="Description">Gives you all level 1 weapons (e.g., pistol, baseball bat, molotov).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">PROFESSIONALTOOLS</td>
+                    <td data-label="Description">Gives you all level 2 weapons (e.g., shotgun, machete, uzi).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">NUTTERTOOLS</td>
+                    <td data-label="Description">Gives you all level 3 weapons (e.g., rocket launcher, minigun, chainsaw).</td>
+                </tr>
+
+                <!-- Health & Armor Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">ASPIRINE</td>
+                    <td data-label="Description">Restores your health to full instantly.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">PRECIOUSPROTECTION</td>
+                    <td data-label="Description">Gives you full armor protection.</td>
+                </tr>
+
+                <!-- Wanted Level Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">LEAVEMEALONE</td>
+                    <td data-label="Description">Lowers your wanted level to zero.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">YOUWONTTAKEMEALIVE</td>
+                    <td data-label="Description">Increases your wanted level by two stars.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">CHASESTAT</td>
+                    <td data-label="Description">Shows media level when wanted level is above 2 stars.</td>
+                </tr>
+
+                <!-- Vehicle Spawn Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">PANZER</td>
+                    <td data-label="Description">Spawns a Rhino tank.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">TRAVELINSTYLE</td>
+                    <td data-label="Description">Spawns a Bloodring Banger (variant 1).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">GETTHEREQUICKLY</td>
+                    <td data-label="Description">Spawns a Bloodring Banger (variant 2).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">GETTHEREFAST</td>
+                    <td data-label="Description">Spawns a Sabre Turbo sports car.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">GETTHEREVERYFASTINDEED</td>
+                    <td data-label="Description">Spawns a Hotring Racer (variant 1).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">GETTHEREAMAZINGLYFAST</td>
+                    <td data-label="Description">Spawns a Hotring Racer (variant 2).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">THELASTRIDE</td>
+                    <td data-label="Description">Spawns a Romero’s Hearse.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">ROCKANDROLLCAR</td>
+                    <td data-label="Description">Spawns a Love Fist limo.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">RUBBISHCAR</td>
+                    <td data-label="Description">Spawns a Trashmaster garbage truck.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">BETTERTHANWALKING</td>
+                    <td data-label="Description">Spawns a Caddy golf cart.</td>
+                </tr>
+
+                <!-- Vehicle Behavior Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">COMEFLYWITHME</td>
+                    <td data-label="Description">Makes cars fly when you accelerate (press UP to lift off).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">SEAWAYS</td>
+                    <td data-label="Description">Allows cars to drive on water.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">GRIPISEVERYTHING</td>
+                    <td data-label="Description">Improves vehicle handling significantly.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">WHEELSAREALLINEED</td>
+                    <td data-label="Description">Makes cars invisible except for their wheels.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">LOADSOFLITTLETHINGS</td>
+                    <td data-label="Description">Gives cars big wheels (works on some vehicles).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">AIRSHIP</td>
+                    <td data-label="Description">Makes boats and helicopters fly faster and more responsive.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">MIAMITRAFFIC</td>
+                    <td data-label="Description">Makes traffic more aggressive and faster.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">BIGBANG</td>
+                    <td data-label="Description">Blows up all nearby vehicles.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">HOPGIRL</td>
+                    <td data-label="Description">Makes prostitutes enter your vehicle when you stop near them.</td>
+                </tr>
+
+                <!-- Player Appearance Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">STILLLIKEDRESSINGUP</td>
+                    <td data-label="Description">Cycles through random pedestrian skins for your character.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">LOOKLIKELANCE</td>
+                    <td data-label="Description">Changes your character to Lance Vance.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">MYSONISALAWYER</td>
+                    <td data-label="Description">Changes your character to Ken Rosenberg.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">ILOOKLIKEHILARY</td>
+                    <td data-label="Description">Changes your character to Hilary King.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">ROCKANDROLLMAN</td>
+                    <td data-label="Description">Changes your character to Jezz Torrent (Love Fist member).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">WELOVEOURDICK</td>
+                    <td data-label="Description">Changes your character to Dick (Love Fist member).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">ONEARMEDBANDIT</td>
+                    <td data-label="Description">Changes your character to Phil Cassidy.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">IDONTHAVETHEMONEYSONNY</td>
+                    <td data-label="Description">Changes your character to Sonny Forelli.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">FOXYLITTLETHING</td>
+                    <td data-label="Description">Changes your character to Mercedes Cortez.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">CHEATSHAVEBEENCRACKED</td>
+                    <td data-label="Description">Changes your character to Ricardo Diaz.</td>
+                </tr>
+
+                <!-- Pedestrian Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">FIGHTFIGHTFIGHT</td>
+                    <td data-label="Description">Causes pedestrians to riot and fight each other (permanent until reload).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">NOBODYLIKESME</td>
+                    <td data-label="Description">Makes pedestrians attack you (permanent until reload).</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">OURGODGIVENRIGHTTOBEARARMS</td>
+                    <td data-label="Description">Gives all pedestrians weapons.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">FANNYMAGNET</td>
+                    <td data-label="Description">Makes female pedestrians follow you.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">CERTAINDEATH</td>
+                    <td data-label="Description">Puts a cigarette in your character’s mouth (cosmetic only).</td>
+                </tr>
+
+                <!-- Weather Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">ALOVELYDAY</td>
+                    <td data-label="Description">Sets weather to sunny.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">APLEASANTDAY</td>
+                    <td data-label="Description">Sets weather to partly cloudy.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">ABITDRIEG</td>
+                    <td data-label="Description">Sets weather to rainy.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">CATSANDDOGS</td>
+                    <td data-label="Description">Sets weather to stormy.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">CANTSEEATHING</td>
+                    <td data-label="Description">Sets weather to foggy.</td>
+                </tr>
+
+                <!-- Time & Gameplay Cheats -->
+                <tr>
+                    <td data-label="Cheat Code">LIFEISPASSINGMEBY</td>
+                    <td data-label="Description">Speeds up the in-game clock.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">ONSPEED</td>
+                    <td data-label="Description">Speeds up game time and movement.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">BOOOOOORING</td>
+                    <td data-label="Description">Slows down game time and movement.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">ICANTTAKEITANYMORE</td>
+                    <td data-label="Description">Causes your character to commit suicide.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">DEEPFRIEDMARSBARS</td>
+                    <td data-label="Description">Makes Tommy Vercetti fatter.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">PROGRAMMER</td>
+                    <td data-label="Description">Makes Tommy Vercetti thinner.</td>
+                </tr>
+                <tr>
+                    <td data-label="Cheat Code">GREENLIGHT</td>
+                    <td data-label="Description">Turns all traffic lights green.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="warning"><br><b>Codewati Tech Private Limited</b><br><br>codewatipvtltd@gmail.com</p>
+    </div>
+
+    <script>
+        function searchCheats() {
+            const input = document.getElementById('search').value.toLowerCase();
+            const rows = document.querySelectorAll('#cheatTable tbody tr');
+
+            rows.forEach(row => {
+                const code = row.cells[0].textContent.toLowerCase();
+                const desc = row.cells[1].textContent.toLowerCase();
+                row.style.display = (code.includes(input) || desc.includes(input)) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
